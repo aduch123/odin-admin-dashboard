@@ -1,0 +1,262 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    font-family: 'Roboto';
+}
+
+header {
+    grid-column: 2;
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    gap: 0;
+}
+
+/* header > div {
+    border: 1px solid black;
+} */
+
+header img {
+    width: 1.5em;
+    height: 1.5em;
+    padding: 1em 0;
+}
+
+header img:nth-child(2) {
+    width: 2.8em;
+    height: 2.8em;
+}
+
+#searchbar {
+    padding-left: 2em;
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+#searchbar input {
+    border: none;
+    border-radius: 30px;
+    width: 48em;
+    padding: 6px 10px;
+    background-color: rgb(224, 227, 230);
+}
+
+#user-info {
+    display: flex;
+    gap: 1.5em;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 3em;
+}
+
+#user-info p {
+    font-size: 1.2em;
+}
+
+#user-greeting {
+    display: flex;
+    gap: 1.5em;
+    padding-left: 2em;
+    align-items: center;
+    font-weight: bold;
+}
+
+#user-greeting img {
+    width: 4em;
+    height: 4em;
+}
+
+#user-greeting span {
+    font-size: 1.4em;
+}
+
+#btns {
+    display: flex;
+    gap: 2em;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 3em;
+}
+
+.btn {
+    border: none;
+    border-radius: 30px;
+    background-color: rgb(25, 146, 212);
+    color: white;
+    padding: 7px 22px;
+    font-weight: bold;
+}
+
+#main-content {
+    background-color: rgb(224, 227, 230);
+    grid-column: 2;
+    display: grid;
+    grid-template-columns: 2.8fr 1fr;
+    padding: 1em 0;
+}
+
+#projects {
+    grid-row: 1 / 3;
+    background-color: rgb(224, 227, 230);
+    padding: 1.2em;
+    padding-bottom: 2em;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: max-content;
+    grid-auto-rows: 13em;
+    gap: 1.7em;
+}
+
+#projects h3 {
+    grid-column: 1 / 3;
+
+}
+
+.card {
+    background-color: rgb(240, 180, 41);
+    border-radius: 10px;
+    padding-left: 8px;
+    display: grid;
+    align-items: stretch;
+}
+
+.content {
+    background-color: white;
+    border-radius: 0 10px 10px 0;
+    padding: 1.8em 1.5em 1.5em 1.5em;
+    position: relative;
+}
+
+.content p {
+    color: rgb(161, 161, 161);
+    font-size: 1em;
+}
+
+.content span {
+    color: black;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.icons {
+    position: absolute;
+    display: flex;
+    gap: 2em;
+    justify-content: flex-end;
+    bottom: 1em;
+    right: 1em;
+}
+
+.icons svg {
+    width: 1.5em;
+    height: 1.5em;
+}
+
+#announcements {
+    grid-row: 1;
+}
+
+#announcements ul {
+    background-color: white;
+    list-style-type: none;
+    display: grid;
+    gap: 2em;
+    padding: 2em;
+    margin: 0 1em;
+}
+
+#announcements p {
+    color: rgb(161, 161, 161);
+    font-size: 0.8em;
+}
+
+#announcements span {
+    color: black;
+    font-size: 1.2em;
+    font-weight: bold;
+    opacity: 80%;
+}
+
+#trending {
+    grid-row: 2;
+}
+
+#trending h3, #announcements h3 {
+    padding: 1em;
+} 
+
+#trending-content {
+    background-color: white;
+    margin: 0em 1em;
+    padding: 0.1em 1em;
+}
+
+.user {
+    display: flex;
+    gap: 1em;
+    align-items: center;
+    margin: 1em;
+}
+
+#trending img {
+    width: 3.2em;
+    height: 3.2em;
+}
+
+#trending p {
+    color: rgb(161, 161, 161);
+}
+
+#trending span {
+    color: black;
+}
+
+#sidebar {
+    background-color: rgb(25, 146, 212);
+    grid-row: 1 / 3;
+    color: white;
+    display: grid;
+    grid-auto-rows: max-content;
+    gap: 3em;
+    padding: 1.8em;
+}
+
+#logo {
+    display: flex;
+    align-items: center;
+    height: fit-content;
+    gap: 1.5em;
+    cursor: pointer;
+}
+
+#logo img {
+    width: 2.9em;
+    height: 2.9em;
+}
+
+#sidebar ul {
+    list-style-type: none;
+}
+
+#sidebar ul li {
+    margin: 1em 0;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    cursor: pointer;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: max-content;
+    gap: 1.2em;
+    align-items: center;
+}
+
+#sidebar svg {
+    fill: white;
+    width: 1.4em;
+    height: 1.4em;
+}
